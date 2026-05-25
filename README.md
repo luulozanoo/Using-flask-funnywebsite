@@ -1,1 +1,38 @@
-# Using-flask-funnywebsite
+# 🪨 The Rock's Personal Web Page & Portfolio 🐬
+
+[![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
+
+> **Aplicación web personal desarrollada con Flask, HTML y CSS.**
+> 
+> Este proyecto es una introducción al desarrollo web backend y frontend. Consiste en una página web temática y humorística estructurada como el portfolio de Dwayne "The Rock" Johnson en su nueva aventura como entrenador de delfines, incluyendo enrutamiento dinámico y manejo de formularios.
+
+---
+
+## 📑 Secciones de la Web
+
+La aplicación cuenta con tres rutas principales gestionadas por Flask:
+
+* 🏠 **Inicio (`/`):** Página de presentación principal con una biografía introductoria y la imagen de perfil centrada.
+* 📋 **Curriculum Vitae (`/cv`):** Sección detallada con la experiencia laboral (desde estrella de acción en Hollywood hasta el océano), habilidades e idiomas (incluyendo clicks de delfín).
+* 📥 **Contacto (`/contact`):** Formulario interactivo. Utiliza métodos `GET` para mostrar la vista inicial y `POST` para procesar los datos introducidos (nombre, email, teléfono), devolviendo una página de confirmación personalizada.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+* **Backend:** Python 3, Flask (Enrutamiento y renderizado de plantillas Jinja2).
+* **Frontend:** HTML5 (Estructuración semántica), CSS3 (Estilos básicos, fondos y centrado de elementos).
+* **Arquitectura:** Patrón básico de vistas y plantillas estáticas (`/templates`, `/static`).
+
+---
+
+## ⚙️ Cómo ejecutar la web en local
+
+Si deseas probar esta página web en tu propio equipo, sigue estos pasos:
+
+### 1. Clona el repositorio
+```bash
+git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
+cd TU_REPOSITORIO
