@@ -1,0 +1,8 @@
+/* styles.css */ 
+body { 
+    background-color: aliceblue; 
+    text-align: left; } 
+
+img.centered { 
+    display: block;
+    margin: 0 auto; }
