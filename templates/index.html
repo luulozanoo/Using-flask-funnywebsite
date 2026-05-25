@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<!-- Esta es la página principal con estilo establecido por styles.css -->
+<head>
+    <title>MAIN PAGE THE ROCK</title> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">   
+</head>
+
+<body>
+    <h1>Hi! I´m Dwayne “The Rock” Johnson, welcome to my home page! 😊</h1>
+    <!-- Importamos la imagen para que aparezca en la página principal -->
+    <img src="{{ url_for('static', filename='the_rock.png') }}" alt="The Rock" width="250" class = 'centered'>
+    <p>Hello everyone! I’m thrilled that you found your way to this page — it really rocks! I’m Dwayne “The Rock” Johnson, 
+        actor, producer, and former wrestling champ. After years of action movies and lifting cars for fun, I’ve decided to 
+        face my biggest challenge yet: training dolphins. Why? Because nothing says “teamwork” like synchronized flips and underwater 
+        high-fives. Check out my CV to see why I’m ready to trade Hollywood lights for ocean waves — and teach the dolphins how to 
+        rock the splash! 🌊💪🐬
+    </p>
+    <p>   </p>
+    <p>Hope you enjoy checking out my CV — I put my heart, soul, and a few protein shakes into it. If you like what you see, great! If not… well, 
+        I’ll probably just raise an eyebrow and train your dolphins anyway. 😉</p>
+    <p>   </p> 
+    <p>More information about me: </p>
+    <!-- Establecemos hipervínculos para acceder a las otras páginas -->
+    <ul>
+        <li><a href="/cv">Access to my CV</a></li>   
+        <li><a href="/contact">Access to my contact</a></li> 
+    </ul>    
+</body>
+
+</html>
+

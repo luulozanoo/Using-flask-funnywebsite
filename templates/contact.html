@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<!-- Establecemos el estilo por el fichero styles.css -->
+<head>
+    <title>CONTACT THE ROCK</title> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">  
+</head>
+
+<!-- En el body vamos a establecer la información que aparecerá en el contacto -->
+<body> 
+    {% if form %}
+    <h1>CONTACT THE ROCK </h1>
+    <section>
+        <h2>☎️ Contact Information</h2>
+        <p>You can reach me out using one of the following methods:</p>
+        <li>· Email: therock@email.com</li>
+        <li>· Phone: +1 555 123 4567</li>
+        <li>· Social media: </li>
+        <ul>
+            <li>Instagram: @TheRock</li>
+            <li>Twitter/X: @TheRock</li>
+            <li>LinkedIn: TheRockProfessional</li>
+        </ul>
+        <!-- Preparamos el botón de confirmación con el formulario -->
+    </section>
+        <h2>📥 Contact Form</h2>
+        <p>You can also send me a message by filling this form. Hope to see you soon!</p>
+        <form action = '/contact' method = 'POST'>
+            <label for = 'name'>Name: </label>
+            <input name = 'name' type="text"> <br>
+            <label for = 'email'>Email:</label>
+            <input name = 'email' type= 'email'> <br>
+            <label for = 'telephone'>Phone: </label>
+            <input name = 'telephone' type= 'tel'> <br>
+            <p>Add your comment:<textarea></textarea></p>
+            <button type="submit">Send</button>
+        </form> 
+    <!-- Devolvemos a la página principal -->
+    <section>
+        <h2>🔗 Back to Main Page</h2>
+        <p><a href="/">Return to The Rock´s Main Page</a></p>
+    <!-- Si recibimos un post redirigimos a la página de confirmación -->
+    </section>
+    {% else %}
+        <h2>CONFIRMATION PAGE</h2>
+        <p>Appreciate the message, {{ name }}! The Rock will hit you back soon at your email {{ email }} — stay ready!</p>
+        <!-- Devolvemos a la página principal -->
+        <h3>🔗 Back to Main Page</h3>
+        <p><a href="/">Return to The Rock´s Main Page</a></p>
+        <h1 style="font-size: 5em;">NEVER STOP ROCKING!!!</h1>
+    {% endif %}
+
+</body>
+
+</html>
