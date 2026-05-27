@@ -68,3 +68,5 @@ Si tienes alguna duda sobre el proyecto, el despliegue en local o quieres conect
 * 📧 **Email:** lucia.lozano110@gmail.com
 * 💼 **LinkedIn:** [linkedin.com/in/tu-perfil](https://linkedin.com/in/tu-perfil)
 * 🐙 **GitHub:** [github.com/luulozanoo](https://github.com/luulozanoo)
+
+Si te ha sacado una sonrisa este portfolio acuático, ¡no dudes en dejar una ⭐ en el repositorio! :) 
