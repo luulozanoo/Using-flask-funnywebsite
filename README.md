@@ -36,3 +36,28 @@ Si deseas probar esta página web en tu propio equipo, sigue estos pasos:
 ```bash
 git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
 cd TU_REPOSITORIO
+```
+
+### 2. Crea y activa un entorno virtual (Recomendado)
+```bash
+# En Windows:
+python -m venv venv
+venv\Scripts\activate
+
+# En macOS/Linux:
+python3 -m venv venv
+source venv/bin/activate
+```
+### 3. Instala Flask
+Como es un proyecto ligero, solo necesitas instalar la librería principal:
+```bash
+pip install Flask
+```
+
+### 4. Ejecuta el servidor de desarrollo
+Asegúrate de estar en el directorio donde se encuentra el archivo main.py y ejecuta:
+```bash
+flask --app main run
+```
+
+Abre tu navegador y entra en http://127.0.0.1:5000 para ver a The Rock en acción.
