@@ -62,6 +62,7 @@ flask --app main run
 
 Abre tu navegador y entra en http://127.0.0.1:5000 para ver a The Rock en acción.
 
+---
 ## 📩 Contacto
 Si tienes alguna duda sobre el proyecto, el despliegue en local o quieres conectar conmigo, puedes encontrarme a través de los siguientes canales oficiales:
 
